@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/profile.jpeg?raw=true</Icon>
+  <Profile>
+    I maintain templates for some of my favorite services and hope you'll find them enjoyable too.
+  </Profile>
+  <WebPage>https://github.com/Skylinar</WebPage>
+  <Forum>https://forums.unraid.net/topic/193655-support-skylinar-repo</Forum>
+  <DonateLink/>
+  <DonateText/>
+</Maintainer>
