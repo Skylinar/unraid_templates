@@ -30,7 +30,7 @@ This is the 1 of 2 containers required to run Sure finance; **please review the 
 Post Installation:&#xD;
 To ensure correct user permissions for the app-storage folder, run 'chown -R 1000:1000 /mnt/user/appdata/sure/app-storage' after the initial startup.</Overview>
   <Category>Productivity: Tools: Other: Status:Stable</Category>
-  <ExtraSearchTerms>sure sure-finance sure-budget personal-finance-management expense-tracking wealth-overview budget-planner open-source-finance self-hosted-finance financial-planning finance-app privacy community-project wealth-management</ExtraSearchTerms>
+  <ExtraSearchTerms>sure sure-web sure-finance sure-budget personal-finance-management expense-tracking wealth-overview budget-planner open-source-finance self-hosted-finance financial-planning finance-app</ExtraSearchTerms>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/sure-web.xml</TemplateURL>
   <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/sure-demo.png?raw=true</Screenshot>

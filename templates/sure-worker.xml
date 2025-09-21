@@ -27,7 +27,7 @@ Note: "Maybe" is a trademark of Maybe Finance, Inc..&#xD;
 &#xD;
 This is the 2 of 2 container required to run Sure finance; **please review the additional requirements.**&#xD;</Overview>
   <Category>Productivity: Tools: Other: Status:Stable</Category>
-  <ExtraSearchTerms>sure sure-finance sure-budget personal-finance-management expense-tracking wealth-overview budget-planner open-source-finance self-hosted-finance financial-planning finance-app privacy community-project wealth-management</ExtraSearchTerms>
+  <ExtraSearchTerms>sure sure-web sure-finance sure-budget personal-finance-management expense-tracking wealth-overview budget-planner open-source-finance self-hosted-finance financial-planning finance-app</ExtraSearchTerms>
   <WebUI/>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/sure-worker.xml</TemplateURL>
   <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/sure-demo.png?raw=true</Screenshot>
