@@ -54,4 +54,7 @@ Check the Sure documentation for more information: https://github.com/we-promise
   <Config Name="Is Self-Hosted" Target="SELF_HOSTING_ENABLED" Default="true|false" Mode="" Description="Is the application self-hosted. Not recommended to change." Type="Variable" Display="advanced-hide" Required="true" Mask="false">true</Config>
   <Config Name="Enforce SSL" Target="RAILS_FORCE_SSL" Default="false|true" Mode="" Description="Enforce SSL connections. Not recommended to change." Type="Variable" Display="advanced" Required="true" Mask="false">false</Config>
   <Config Name="Assume SSL" Target="RAILS_ASSUME_SSL" Default="false|true" Mode="" Description="Assume SSL connections. Not recommended to change." Type="Variable" Display="advanced-hide" Required="true" Mask="false">false</Config>
+  <Changes>### 2025.09.20
+- Initial Release
+  </Changes>
 </Container>
