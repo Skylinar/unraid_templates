@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pi-Dash</Name>
+  <Repository>ghcr.io/surajverma/pi-dash:latest</Repository>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>Latest build of Pi-Dash</TagDescription>
+    <Repository>ghcr.io/surajverma/pi-dash:latest</Repository>
+    <Registry>https://github.com/surajverma/pi-dash/pkgs/container/pi-dash</Registry>
+  </Branch>
+  <Registry>https://github.com/surajverma/pi-dash/pkgs/container/pi-dash</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
+  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md</ReadMe>
+  <Project>https://github.com/surajverma/pi-dash</Project>
+  <Overview>Pi-Dash is a simple, lightweight dashboard for monitoring multiple Pi-hole instances. It provides a clean, at-a-glance, responsive view of your Pi-hole statistics.&#xD;
+&#xD;
+Before first startup:&#xD;
+1. create the appdata folder 'mkdir /mnt/user/appdata/pi-dash'&#xD;
+2. grab the example configuration json 'curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config-example.json -o /mnt/user/appdata/pi-dash/config.json'&#xD;
+3. adjust the config as needed</Overview>
+  <Category>Productivity: Tools: Other: Status:Stable</Category>
+  <ExtraSearchTerms>pihole pihole-dashboard</ExtraSearchTerms>
+  <WebUI>http://[IP]:[PORT:5001]</WebUI>
+  <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/pi-dash.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/pi-dash.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1758537657</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="5001" Default="5001" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5001</Config>
+  <Config Name="Config" Target="/app/config.json" Default="/mnt/user/appdata/pi-dash/config.json" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pi-dash/config.json</Config>
+  <Changes>### 2025.09.22
+- Initial Release
+  </Changes>
+  <TailscaleStateDir/>
+</Container>
