@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>HomeHub</Name>
+  <Repository>ghcr.io/surajverma/homehub:latest</Repository>
+  <Registry>https://github.com/surajverma/homehub/pkgs/container/homehub</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/193655-support-skylinar-repo/</Support>
+  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md</ReadMe>
+  <Project>https://github.com/surajverma/homehub</Project>
+  <Overview>Ever wanted a simple, private spot on your home network for your family's daily stuff? That's HomeHub. It's a lightweight, self-hosted web app that turns any computer (even a Raspberry Pi!) into a central hub for shared notes, shopping lists, chores, a media downloader, and even a family expense tracker.&#xD;
+&#xD;
+It&#x2019;s designed to be easy to use for everyone in the family, with a clean interface that works great on any device.&#xD;
+&#xD;
+Before first startup:&#xD;
+1. create the appdata folder 'mkdir /mnt/user/appdata/homehub'&#xD;
+2. grab the example configuration yml 'curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml'&#xD;
+</Overview>
+  <Category>Productivity: Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/homehub.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1758533768</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+  <Config Name="Config" Target="/app/config.yml" Default="/mnt/user/appdata/homehub/config.yml" Mode="ro" Description="Grab the example configuration yml 'curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml'" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homehub/config.yml</Config>
+  <Config Name="Uploads" Target="/app/uploads" Default="/mnt/user/appdata/homehub/uploads" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homehub/uploads</Config>
+  <Config Name="Media" Target="/app/media" Default="/mnt/user/appdata/homehub/media" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homehub/media</Config>
+  <Config Name="PDF's" Target="/app/pdfs" Default="/mnt/user/appdata/homehub/pdfs" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homehub/pdfs</Config>
+  <Config Name="Data" Target="/app/data" Default="/mnt/user/appdata/homehub/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homehub/data</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Secret key. Run `openssl rand -hex 64` to generate a secret" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="FLASK_ENV" Target="FLASK_ENV" Default="production" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">production</Config>
+  <TailscaleStateDir/>
+</Container>
