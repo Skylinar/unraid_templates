@@ -28,7 +28,7 @@ Before first startup:&#xD;
   <ExtraSearchTerms>homehub smarthome automation</ExtraSearchTerms>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/homehub.xml</TemplateURL>
-  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/homehub/homehub-demo.png?raw=true</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/homehub/homehub-demo.gif?raw=true</Screenshot>
   <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/homehub.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
