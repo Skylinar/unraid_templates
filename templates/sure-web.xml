@@ -33,7 +33,7 @@ To ensure correct user permissions for the app-storage folder, run 'chown -R 100
   <ExtraSearchTerms>sure sure-web sure-finance sure-budget personal-finance-management expense-tracking wealth-overview budget-planner open-source-finance self-hosted-finance financial-planning finance-app</ExtraSearchTerms>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/sure-web.xml</TemplateURL>
-  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/sure-demo.png?raw=true</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/sure/sure-demo.png?raw=true</Screenshot>
   <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/sure-web.png?raw=true</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>

@@ -30,7 +30,7 @@ This is the 2 of 2 container required to run Sure finance; **please review the a
   <ExtraSearchTerms>sure sure-web sure-finance sure-budget personal-finance-management expense-tracking wealth-overview budget-planner open-source-finance self-hosted-finance financial-planning finance-app</ExtraSearchTerms>
   <WebUI/>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/sure-worker.xml</TemplateURL>
-  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/sure-demo.png?raw=true</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/sure/sure-demo.png?raw=true</Screenshot>
   <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/sure-worker.png?raw=true</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs>bundle exec sidekiq</PostArgs>

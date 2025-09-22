@@ -2,6 +2,12 @@
 <Container version="2">
   <Name>HomeHub</Name>
   <Repository>ghcr.io/surajverma/homehub:latest</Repository>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>Latest build of HomeHub</TagDescription>
+    <Repository>ghcr.io/surajverma/homehub:latest</Repository>
+    <Registry>https://github.com/surajverma/homehub/pkgs/container/homehub</Registry>
+  </Branch>
   <Registry>https://github.com/surajverma/homehub/pkgs/container/homehub</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -19,8 +25,10 @@ Before first startup:&#xD;
 2. grab the example configuration yml 'curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml'&#xD;
 </Overview>
   <Category>Productivity: Tools: Other:</Category>
+  <ExtraSearchTerms>homehub smarthome automation</ExtraSearchTerms>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/homehub.xml</TemplateURL>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/homehub/homehub-demo.png?raw=true</Screenshot>
   <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/homehub.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
@@ -37,5 +45,8 @@ Before first startup:&#xD;
   <Config Name="Data" Target="/app/data" Default="/mnt/user/appdata/homehub/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homehub/data</Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Secret key. Run `openssl rand -hex 64` to generate a secret" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="FLASK_ENV" Target="FLASK_ENV" Default="production" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">production</Config>
+  <Changes>### 2025.09.22
+- Initial Release
+  </Changes>  
   <TailscaleStateDir/>
 </Container>
