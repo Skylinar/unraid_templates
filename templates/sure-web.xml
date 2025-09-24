@@ -1,17 +1,11 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Sure-Web</Name>
-  <Repository>ghcr.io/we-promise/sure:stable</Repository>
+  <Repository>ghcr.io/we-promise/sure:latest</Repository>
   <Branch>
     <Tag>stable</Tag>
     <TagDescription>Latest stable release of sure</TagDescription>
     <Repository>ghcr.io/we-promise/sure:stable</Repository>
-    <Registry>https://github.com/we-promise/sure/pkgs/container/sure</Registry>
-  </Branch>
-  <Branch>
-    <Tag>latest</Tag>
-    <TagDescription>Latest build of sure</TagDescription>
-    <Repository>ghcr.io/we-promise/sure:latest</Repository>
     <Registry>https://github.com/we-promise/sure/pkgs/container/sure</Registry>
   </Branch>
   <Registry>https://github.com/we-promise/sure/pkgs/container/sure</Registry>

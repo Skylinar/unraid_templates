@@ -2,12 +2,6 @@
 <Container version="2">
   <Name>Pi-Dash</Name>
   <Repository>ghcr.io/surajverma/pi-dash:latest</Repository>
-  <Branch>
-    <Tag>latest</Tag>
-    <TagDescription>Latest build of Pi-Dash</TagDescription>
-    <Repository>ghcr.io/surajverma/pi-dash:latest</Repository>
-    <Registry>https://github.com/surajverma/pi-dash/pkgs/container/pi-dash</Registry>
-  </Branch>
   <Registry>https://github.com/surajverma/pi-dash/pkgs/container/pi-dash</Registry>
   <Network>bridge</Network>
   <MyIP/>

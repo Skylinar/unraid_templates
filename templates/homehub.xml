@@ -2,12 +2,6 @@
 <Container version="2">
   <Name>HomeHub</Name>
   <Repository>ghcr.io/surajverma/homehub:latest</Repository>
-  <Branch>
-    <Tag>latest</Tag>
-    <TagDescription>Latest build of HomeHub</TagDescription>
-    <Repository>ghcr.io/surajverma/homehub:latest</Repository>
-    <Registry>https://github.com/surajverma/homehub/pkgs/container/homehub</Registry>
-  </Branch>
   <Registry>https://github.com/surajverma/homehub/pkgs/container/homehub</Registry>
   <Network>bridge</Network>
   <MyIP/>
