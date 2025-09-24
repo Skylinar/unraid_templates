@@ -20,6 +20,7 @@ Before first startup:&#xD;
   <ExtraSearchTerms>pihole pihole-dashboard</ExtraSearchTerms>
   <WebUI>http://[IP]:[PORT:5001]</WebUI>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/pi-dash.xml</TemplateURL>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/pi-dash/pi-dash-demo.png?raw=true</Screenshot>
   <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/pi-dash.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
