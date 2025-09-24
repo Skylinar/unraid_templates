@@ -1,10 +1,40 @@
 # Unraid Templates
+- [Pi-Dash](#pi-dash)
+  * [First installation](#first-installation)
 - [Sure-Web](#sure-web)
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
 - [Sure-Worker](#sure-worker)
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
+
+----
+# Pi-Dash
+![Pi-Dash](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/pi-dash-128.png)
+
+Pi-Dash is a simple, lightweight dashboard for monitoring multiple Pi-hole instances. It provides a clean, at-a-glance, responsive view of your Pi-hole statistics.
+
+**Application Name:** Pi-Dash
+
+**Application Site:** https://github.com/surajverma/pi-dash
+
+**Registry:** https://github.com/surajverma/pi-dash/pkgs/container/pi-dash
+
+**Github:** https://github.com/surajverma/pi-dash
+
+## First installation 
+Before first startup:
+1. create the appdata folder: 
+```
+mkdir /mnt/user/appdata/pi-dash
+```
+2. grab the example configuration json: 
+```
+curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config-example.json -o /mnt/user/appdata/pi-dash/config.json
+```
+3. adjust the config as needed
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Sure-Web
@@ -34,9 +64,20 @@ To ensure correct user permissions for the app-storage folder, **run** `chown -R
 
 ----
 # Sure-Worker
-![Sure-Web](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/sure-worker-128.png)
+![Sure-Worker](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/sure-worker-128.png)
 
-Coming soon...
+Sure is a community-driven fork of the former Maybe Finance application, continuing its mission to help users manage personal finances by tracking expenses, budgeting, and supporting wealth management.
+Note: "Maybe" is a trademark of Maybe Finance, Inc..
+
+This is the 2 of 2 container required to run Sure finance; **please review the additional requirements.**
+
+**Application Name:** Sure-Worker
+
+**Application Site:** https://github.com/we-promise/sure
+
+**Registry:** https://github.com/we-promise/sure/pkgs/container/sure
+
+**Github:** https://github.com/we-promise/sure
 
 **[`^back to top^`](#unraid-templates)**
 
