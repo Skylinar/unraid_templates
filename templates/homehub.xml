@@ -14,7 +14,7 @@
 &#xD;
 It&#x2019;s designed to be easy to use for everyone in the family, with a clean interface that works great on any device.&#xD;
 &#xD;
-Before first startup:&#xD;
+Before Installing:&#xD;
 1. create the appdata folder 'mkdir /mnt/user/appdata/homehub'&#xD;
 2. grab the example configuration yml 'curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml'&#xD;
 3. adjust the config as needed</Overview>

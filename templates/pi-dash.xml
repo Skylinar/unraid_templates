@@ -12,7 +12,7 @@
   <Project>https://github.com/surajverma/pi-dash</Project>
   <Overview>Pi-Dash is a simple, lightweight dashboard for monitoring multiple Pi-hole instances. It provides a clean, at-a-glance, responsive view of your Pi-hole statistics.&#xD;
 &#xD;
-Before first startup:&#xD;
+Before Installing:&#xD;
 1. create the appdata folder 'mkdir /mnt/user/appdata/pi-dash'&#xD;
 2. grab the example configuration json 'curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config-example.json -o /mnt/user/appdata/pi-dash/config.json'&#xD;
 3. adjust the config as needed</Overview>
