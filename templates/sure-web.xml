@@ -45,8 +45,6 @@ To ensure correct user permissions for the app-storage folder, run 'chown -R 100
 Requires a //Postgres\\ database and //Redis\\.&#xD;
 Check the Sure documentation for more information: https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md&#xD;
   </Requires>
-  <Changes>
-  </Changes>
   <Config Name="Config data" Target="/rails/storage" Default="/mnt/user/appdata/sure/app-storage" Mode="rw" Description="Config data for application. Should be the same dir as Sure Worker." Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/sure/app-storage</Config>
   <Config Name="Web UI Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">3000</Config>
   <Config Name="Secret Key" Target="SECRET_KEY_BASE" Default="" Mode="" Description="Secret key. Run `openssl rand -hex 64` to generate a secret" Type="Variable" Display="always-hide" Required="true" Mask="true"/>
