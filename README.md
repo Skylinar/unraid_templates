@@ -1,4 +1,6 @@
 # Unraid Templates
+- [EarnApp](#earnapp)
+  * [First installation](#first-installation)
 - [Home-Hub](#home-hub)
   * [First installation](#first-installation)
 - [Pi-Dash](#pi-dash)
@@ -12,6 +14,40 @@
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
 - [Traffmonetizer](#traffmonetizer)
+  * [First installation](#first-installation)
+
+----
+# EarnApp
+![EarnApp](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/earnapp.png)
+
+EarnApp offers a fair, transparent, and ethical way for users to earn passive income while contributing to a smarter internet. Our platform allows you to monetize your unused internet bandwidth effortlessly, turning it into real earnings - all while maintaining the highest standards of security and privacy. Sign up [here](https://earnapp.com/i/FWIrAclQ).
+
+**Application Name:** EarnApp
+
+**Application Site:** https://earnapp.com/i/FWIrAclQ
+
+**Registry:** https://hub.docker.com/r/madereddy/earnapp
+
+**Github:** https://github.com/madereddy/EarnApp-Docker
+
+## First Install
+Generate UUID
+1.  The UUID is 32 characters long with lowercase alphabet and numbers. You can either create this by yourself or via this command:
+    ```bash
+    echo -n sdk-node- && head -c 1024 /dev/urandom | md5sum | tr -d ' -'
+    ```
+
+    *Example output* </br>
+    *sdk-node-0123456789abcdeffedcba9876543210*
+
+2.  Before registering your device, ensure that you pass the UUID into the container and start it first. Then proceed to register your device using the url:
+    ```
+    https://earnapp.com/r/UUID
+    ```
+    *Example url* </br>
+    *h<span>ttps://earnapp.</span>com/r/sdk-node-0123456789abcdeffedcba9876543210*
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Home-Hub
@@ -32,11 +68,11 @@ It's designed to be easy to use for everyone in the family, with a clean interfa
 ## First installation 
 Before first startup:
 1. create the appdata folder:
-```
+```bash
 mkdir /mnt/user/appdata/homehub
 ```
 2. grab the example configuration yml:
-```
+```bash
 curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml
 ```
 3. adjust the config as needed
@@ -60,11 +96,11 @@ Pi-Dash is a simple, lightweight dashboard for monitoring multiple Pi-hole insta
 ## First installation 
 Before first startup:
 1. create the appdata folder: 
-```
+```bash
 mkdir /mnt/user/appdata/pi-dash
 ```
 2. grab the example configuration json: 
-```
+```bash
 curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config-example.json -o /mnt/user/appdata/pi-dash/config.json
 ```
 3. adjust the config as needed
@@ -76,7 +112,7 @@ curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config
 # Repocket
 ![Repocket](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/repocket-128.png)
 
-With Repocket, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Repocket work in the background. Sign up using link: https://link.repocket.com/drQ5
+With Repocket, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Repocket work in the background. Sign up [here](https://link.repocket.com/drQ5).
 
 ## First Installation:
 Before starting the container you should replace 'your_token_here' in the Post Args.
@@ -139,7 +175,10 @@ This is the 2 of 2 container required to run Sure finance; **please review the a
 # Traffmonetizer
 ![Traffmonetizer](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/traffmonetizer-128.png)
 
-With Traffmonetizer, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Traffmonetizer work in the background. Sign up using link: https://traffmonetizer.com/?aff=1674311
+With Traffmonetizer, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Traffmonetizer work in the background. Sign up [here](https://traffmonetizer.com/?aff=1674311).
+
+## First Installation:
+Before starting the container you should replace `your_token_here` in the Post Args.
 
 **Application Name:** Traffmonetizer
 
