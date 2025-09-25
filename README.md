@@ -1,6 +1,7 @@
 # Unraid Templates
 - [EarnApp](#earnapp)
   * [First installation](#first-installation)
+- [EarnFM](#earnfm)
 - [Home-Hub](#home-hub)
   * [First installation](#first-installation)
 - [Pi-Dash](#pi-dash)
@@ -46,6 +47,20 @@ Generate UUID
     ```
     *Example url* </br>
     *h<span>ttps://earnapp.</span>com/r/sdk-node-0123456789abcdeffedcba9876543210*
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# EarnFM
+![EarnFM](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/earnfm-128.png)
+
+EarnFM offers a simple and secure way for users to earn passive income by sharing their unused internet bandwidth. Sign up [here](https://earn.fm/ref/SKYLSZ5N).
+
+**Application Name:** EarnFM
+
+**Application Site:** https://earn.fm/ref/SKYLSZ5N
+
+**Registry:** https://hub.docker.com/r/earnfm/earnfm-client
 
 **[`^back to top^`](#unraid-templates)**
 
