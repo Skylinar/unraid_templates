@@ -1,4 +1,6 @@
 # Unraid Templates
+- [Home-Hub](#home-hub)
+  * [First installation](#first-installation)
 - [Pi-Dash](#pi-dash)
   * [First installation](#first-installation)
 - [Sure-Web](#sure-web)
@@ -7,6 +9,36 @@
 - [Sure-Worker](#sure-worker)
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
+
+----
+# Home-Hub
+![Home-Hub](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/homehub.png)
+
+Ever wanted a simple, private spot on your home network for your family's daily stuff? That's HomeHub. It's a lightweight, self-hosted web app that turns any computer (even a Raspberry Pi!) into a central hub for shared notes, shopping lists, chores, a media downloader, and even a family expense tracker.
+
+It's designed to be easy to use for everyone in the family, with a clean interface that works great on any device.
+
+**Application Name:** Home-Hub
+
+**Application Site:** https://github.com/surajverma/homehub
+
+**Registry:** https://github.com/surajverma/homehub/pkgs/container/homehub
+
+**Github:** https://github.com/surajverma/homehub
+
+## First installation 
+Before first startup:
+1. create the appdata folder:
+```
+mkdir /mnt/user/appdata/homehub
+```
+2. grab the example configuration yml:
+```
+curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml
+```
+3. adjust the config as needed
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Pi-Dash
