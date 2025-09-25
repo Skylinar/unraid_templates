@@ -10,7 +10,6 @@
   <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
   <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md</ReadMe>
   <Project>https://earnapp.com/i/FWIrAclQ</Project>
-  <ExtraSearchTerms>earnapp internet share speedshare repocket honeygain traffmonetizer bandwidth cash passive income</ExtraSearchTerms>
   <Overview>EarnApp offers a fair, transparent, and ethical way for users to earn passive income while contributing to a smarter internet. Our platform allows you to monetize your unused internet bandwidth effortlessly, turning it into real earnings - all while maintaining the highest standards of security and privacy.&#xD;
 Sign up using link: https://earnapp.com/i/FWIrAclQ
 &#xD;&#xD;
@@ -26,6 +25,7 @@ sdk-node-0123456789abcdeffedcba9876543210&#xD;
 *Example url*&#xD;
 https://earnapp.com/r/sdk-node-0123456789abcdeffedcba9876543210</Overview>
   <Category>Tools: Other: Network:Web</Category>
+  <ExtraSearchTerms>earnapp internet share speedshare repocket honeygain traffmonetizer EarnFM bandwidth cash passive income</ExtraSearchTerms>
   <WebUI/>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/earnapp.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/earnapp.png?raw=true</Icon>
