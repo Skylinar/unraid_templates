@@ -4,6 +4,7 @@
 - [Pi-Dash](#pi-dash)
   * [First installation](#first-installation)
 - [Repocket](#repocket)
+  * [First installation](#first-installation)
 - [Sure-Web](#sure-web)
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
@@ -76,6 +77,9 @@ curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config
 ![Repocket](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/repocket-128.png)
 
 With Repocket, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Repocket work in the background. Sign up using link: https://link.repocket.com/drQ5
+
+## First Installation:
+Before starting the container you should replace 'your_token_here' in the Post Args.
 
 **Application Name:** Repocket
 
