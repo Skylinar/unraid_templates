@@ -9,6 +9,7 @@
 - [Sure-Worker](#sure-worker)
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
+- [Traffmonetizer](#sure-worker)
 
 ----
 # Home-Hub
@@ -110,6 +111,21 @@ This is the 2 of 2 container required to run Sure finance; **please review the a
 **Registry:** https://github.com/we-promise/sure/pkgs/container/sure
 
 **Github:** https://github.com/we-promise/sure
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+
+# Traffmonetizer
+![Traffmonetizer](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/traffmonetizer-128.png)
+
+With Traffmonetizer, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Traffmonetizer work in the background. Sign up using link: https://traffmonetizer.com/?aff=1674311
+
+**Application Name:** Traffmonetizer
+
+**Application Site:** https://traffmonetizer.com/?aff=1674311
+
+**Registry:** https://hub.docker.com/r/traffmonetizer/cli_v2/
 
 **[`^back to top^`](#unraid-templates)**
 
