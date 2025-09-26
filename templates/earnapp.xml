@@ -9,10 +9,10 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
   <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#earnapp</ReadMe>
-  <Project>https://earnapp.com/i/FWIrAclQ</Project>
+  <Project>https://earnapp.com/</Project>
   <Overview>EarnApp offers a fair, transparent, and ethical way for users to earn passive income while contributing to a smarter internet. Our platform allows you to monetize your unused internet bandwidth effortlessly, turning it into real earnings - all while maintaining the highest standards of security and privacy.&#xD;
-Sign up using link: https://earnapp.com/i/FWIrAclQ
-&#xD;&#xD;
+Feel free to sign up and use my support link: https://earnapp.com/i/FWIrAclQ&#xD;
+&#xD;
 Before Installing generate a UUID and put it into EARNAPP_UUID:&#xD;
 1.  The UUID is 32 characters long with lowercase alphabet and numbers. You can either create this by yourself or via this command:&#xD;
 echo -n sdk-node- &amp;amp;&amp;amp; head -c 1024 /dev/urandom | md5sum | tr -d ' -'&#xD;

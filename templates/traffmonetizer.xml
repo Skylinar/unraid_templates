@@ -9,8 +9,9 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
   <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#traffmonetizer</ReadMe>
-  <Project>https://traffmonetizer.com/?aff=1674311</Project>
-  <Overview>With Traffmonetizer, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Traffmonetizer work in the background. Sign up using link: https://traffmonetizer.com/?aff=1674311&#xD;
+  <Project>https://traffmonetizer.com/</Project>
+  <Overview>With Traffmonetizer, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Traffmonetizer work in the background.&#xD;
+Feel free to sign up and use my support link: https://traffmonetizer.com/?aff=1674311&#xD;
 &#xD;
 First Installation:
 Before starting the container you should replace 'your_token_here' in the Post Args.
