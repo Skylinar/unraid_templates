@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
-  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md</ReadMe>
+  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#pi-dash</ReadMe>
   <Project>https://github.com/surajverma/pi-dash</Project>
   <Overview>Pi-Dash is a simple, lightweight dashboard for monitoring multiple Pi-hole instances. It provides a clean, at-a-glance, responsive view of your Pi-hole statistics.&#xD;
 &#xD;

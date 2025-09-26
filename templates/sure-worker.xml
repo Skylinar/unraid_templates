@@ -14,7 +14,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
-  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md</ReadMe>
+  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#sure-worker</ReadMe>
   <Project>https://github.com/we-promise/sure</Project>
   <Overview>Sure is a community-driven fork of the former Maybe Finance application, continuing its mission to help users manage personal finances by tracking expenses, budgeting, and supporting wealth management.
 Note: "Maybe" is a trademark of Maybe Finance, Inc..&#xD;

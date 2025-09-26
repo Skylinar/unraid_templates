@@ -16,6 +16,7 @@
   * [First installation](#first-installation)
 - [Traffmonetizer](#traffmonetizer)
   * [First installation](#first-installation)
+- [Twitch-Channel-Points-Miner-v2](#twitch-channel-points-miner-v2)
 
 ----
 # EarnApp
@@ -200,6 +201,13 @@ Before starting the container you should replace `your_token_here` in the Post A
 **Application Site:** https://traffmonetizer.com/?aff=1674311
 
 **Registry:** https://hub.docker.com/r/traffmonetizer/cli_v2/
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+
+# Twitch-Channel-Points-Miner-v2
+Coming soon...
 
 **[`^back to top^`](#unraid-templates)**
 
