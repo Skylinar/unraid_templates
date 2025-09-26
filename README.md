@@ -22,11 +22,11 @@
 # EarnApp
 ![EarnApp](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/earnapp.png)
 
-EarnApp offers a fair, transparent, and ethical way for users to earn passive income while contributing to a smarter internet. Our platform allows you to monetize your unused internet bandwidth effortlessly, turning it into real earnings - all while maintaining the highest standards of security and privacy. Sign up [here](https://earnapp.com/i/FWIrAclQ).
+EarnApp offers a fair, transparent, and ethical way for users to earn passive income while contributing to a smarter internet. Our platform allows you to monetize your unused internet bandwidth effortlessly, turning it into real earnings - all while maintaining the highest standards of security and privacy. Sign up via support link [here](https://earnapp.com/i/FWIrAclQ).
 
 **Application Name:** EarnApp
 
-**Application Site:** https://earnapp.com/i/FWIrAclQ
+**Application Site:** https://earnapp.com/
 
 **Registry:** https://hub.docker.com/r/madereddy/earnapp
 
@@ -55,7 +55,7 @@ Generate UUID
 # EarnFM
 ![EarnFM](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/earnfm-128.png)
 
-EarnFM offers a simple and secure way for users to earn passive income by sharing their unused internet bandwidth. Sign up [here](https://earn.fm/ref/SKYLSZ5N).
+EarnFM offers a simple and secure way for users to earn passive income by sharing their unused internet bandwidth. Sign up via support link [here](https://earn.fm/ref/SKYLSZ5N).
 
 **Application Name:** EarnFM
 
@@ -128,7 +128,7 @@ curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config
 # Repocket
 ![Repocket](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/repocket-128.png)
 
-With Repocket, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Repocket work in the background. Sign up [here](https://link.repocket.com/drQ5).
+With Repocket, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Repocket work in the background. Sign up via support link [here](https://link.repocket.com/drQ5).
 
 ## First Installation:
 Before starting the container you should replace 'your_token_here' in the Post Args.
@@ -191,7 +191,7 @@ This is the 2 of 2 container required to run Sure finance; **please review the a
 # Traffmonetizer
 ![Traffmonetizer](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/traffmonetizer-128.png)
 
-With Traffmonetizer, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Traffmonetizer work in the background. Sign up [here](https://traffmonetizer.com/?aff=1674311).
+With Traffmonetizer, you can earn passive income by sharing your unused internet bandwidth safely and easily. Start making money today, just set up, connect, and let Traffmonetizer work in the background. Sign up via support link [here](https://traffmonetizer.com/?aff=1674311).
 
 ## First Installation:
 Before starting the container you should replace `your_token_here` in the Post Args.
