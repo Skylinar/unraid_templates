@@ -1,4 +1,5 @@
 # Unraid Templates
+- [Apache-Tika-Server](#apache-tika-server)
 - [Home-Hub](#home-hub)
   * [First installation](#first-installation)
 - [Pi-Dash](#pi-dash)
@@ -10,6 +11,22 @@
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
 - [Twitch-Channel-Points-Miner-v2](#twitch-channel-points-miner-v2)
+
+----
+# Apache-Tika-Server
+![Home-Hub](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/tika.png)
+
+Apache Tika is a project of the Apache Software Foundation that detects and extracts metadata and text from over a thousand different file types.
+
+**Application Name:** apache-tika-server
+
+**Application Site:** https://tika.apache.org/
+
+**Registry:** https://hub.docker.com/r/apache/tika
+
+**Github:** https://github.com/apache/tika
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Home-Hub
