@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>apache-tika-server</Name>
+  <Repository>apache/tika:latest</Repository>
+  <Registry>https://hub.docker.com/r/apache/tika</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
+  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#apache-tika-server</ReadMe>
+  <Project>https://tika.apache.org/</Project>
+  <Overview>Apache Tika is a project of the Apache Software Foundation that detects and extracts metadata and text from over a thousand different file types.</Overview>
+  <Category>Productivity:</Category>
+  <ExtraSearchTerms>tika tika-server apache-tika</ExtraSearchTerms>
+  <WebUI/>
+  <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/apache-tika-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/tika.png?raw=true</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1762772634</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Tika Port" Target="9998" Default="9998" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">9998</Config>
+  <Changes>### 2025.11.10
+- Initial Release
+  </Changes>    
+  <TailscaleStateDir/>
+</Container>
