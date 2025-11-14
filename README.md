@@ -61,7 +61,7 @@ curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.ym
 
 ----
 # PostgreSQL18
-![PostgreSQL 18](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/postgresql.png)
+![PostgreSQL 18](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/postgresql-128.png)
 
 PostgreSQL 18 is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
 
