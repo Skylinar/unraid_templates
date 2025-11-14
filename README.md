@@ -4,6 +4,7 @@
   * [First installation](#first-installation)
 - [Pi-Dash](#pi-dash)
   * [First installation](#first-installation)
+- [PostgreSQL18](#postgresql18)
 - [Sure-Web](#sure-web)
   * [Additional Requirements](#additional-requirements)
   * [First installation](#first-installation)
@@ -55,6 +56,22 @@ mkdir /mnt/user/appdata/homehub
 curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml
 ```
 3. adjust the config as needed
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# PostgreSQL18
+![PostgreSQL 18](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/postgresql.png)
+
+PostgreSQL 18 is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
+
+**Application Name:** postgresql18
+
+**Application Site:** https://www.postgresql.org/
+
+**Registry:** https://registry.hub.docker.com/_/postgres/
+
+**Github:** https://github.com/docker-library/postgres
 
 **[`^back to top^`](#unraid-templates)**
 

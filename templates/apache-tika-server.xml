@@ -10,6 +10,7 @@
   <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
   <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#apache-tika-server</ReadMe>
   <Project>https://tika.apache.org/</Project>
+  <GitHub>https://github.com/apache/tika</GitHub>
   <Overview>Apache Tika is a project of the Apache Software Foundation that detects and extracts metadata and text from over a thousand different file types.</Overview>
   <Category>Productivity:</Category>
   <ExtraSearchTerms>tika tika-server apache-tika</ExtraSearchTerms>
