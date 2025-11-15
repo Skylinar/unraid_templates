@@ -17,6 +17,11 @@ NOTE: The app needs to run privileged to work like it is intended to be used.</O
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/cronmaster.xml</TemplateURL>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/cronmaster/home.png?raw=true</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/cronmaster/backup.png?raw=true</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/cronmaster/live-running.png?raw=true</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/cronmaster/logs.png?raw=true</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/demo/cronmaster/new-job.png?raw=true</Screenshot>
   <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/cronmaster.png?raw=true</Icon>
   <ExtraParams>--pid=host --init --user root</ExtraParams>
   <PostArgs/>
