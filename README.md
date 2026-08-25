@@ -2,17 +2,15 @@
 - [Apache-Tika-Server](#apache-tika-server)
 - [Home-Hub](#home-hub)
   * [First installation](#first-installation)
-- [Obsidian-Livesync-Bridge](#obsidian-livesync-bridge)
-  * [First installation](#first-installation-1)
 - [Pi-Dash](#pi-dash)
-  * [First installation](#first-installation-2)
+  * [First installation](#first-installation)
 - [PostgreSQL18](#postgresql18)
 - [Sure-Web](#sure-web)
   * [Additional Requirements](#additional-requirements)
-  * [First installation](#first-installation-3)
+  * [First installation](#first-installation)
 - [Sure-Worker](#sure-worker)
-  * [Additional Requirements](#additional-requirements-1)
-  * [First installation](#first-installation-4)
+  * [Additional Requirements](#additional-requirements)
+  * [First installation](#first-installation)
 - [Twitch-Channel-Points-Miner-v2](#twitch-channel-points-miner-v2)
 
 ----
@@ -47,97 +45,16 @@ It's designed to be easy to use for everyone in the family, with a clean interfa
 
 **Github:** https://github.com/surajverma/homehub
 
-## First installation
+## First installation 
 Before first startup:
-
 1. create the appdata folder:
-
-```shell
+```bash
 mkdir /mnt/user/appdata/homehub
 ```
-
 2. grab the example configuration yml:
-
-```shell
+```bash
 curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml
 ```
-
-3. adjust the config as needed
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Obsidian-Livesync-Bridge
-![Obsidian-Livesync-Bridge](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/livesync-bridge.png)
-
-Bidirectional sync between a local Obsidian vault folder and CouchDB using the Self-hosted LiveSync protocol. Runs headless (Deno, no GUI) - perfect for bringing agent-written markdown files (e.g. Hermes daily notes) into the LiveSync loop, so they reach all Obsidian devices (desktop, iPhone, iPad).
-
-Based on [vrtmrz/livesync-bridge](https://github.com/vrtmrz/livesync-bridge) (by the author of the LiveSync plugin).
-
-**Application Name:** Obsidian Livesync Bridge
-
-**Application Site:** https://github.com/vrtmrz/livesync-bridge
-
-**Registry:** https://hub.docker.com/r/harshl/obsidian-livesync-bridge
-
-**Github:** https://github.com/vrtmrz/livesync-bridge
-
-## First installation
-Before first startup:
-
-1. create the appdata folder:
-
-```shell
-mkdir /mnt/user/appdata/livesync-bridge
-```
-
-2. install the container from Community Apps (template mounts are preconfigured):
-
-   - `/mnt/user/appdata/livesync-bridge/config` → `/app/dat` (config)
-   - `/mnt/user/appdata/livesync-bridge/data` → `/app/data` (state)
-   - `/mnt/user/obsidian` → `/app/vault` (the vault share)
-
-3. after the first start, copy the sample config:
-
-```shell
-cp /mnt/user/appdata/livesync-bridge/config/config.sample.json /mnt/user/appdata/livesync-bridge/config/config.json
-```
-
-4. edit `config.json` — define your CouchDB peer (URL, database, credentials) and the storage peer (`baseDir: "./vault/"` maps to the vault share). Refer to the [upstream documentation](https://github.com/vrtmrz/livesync-bridge#configuration) for the full schema.
-
-5. restart the container. Check the logs to confirm the peers are connecting.
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Pi-Dash
-![Pi-Dash](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/pi-dash.png)
-
-Pi-Dash is a simple, lightweight dashboard for monitoring multiple Pi-hole instances. It provides a clean, at-a-glance, responsive view of your Pi-hole statistics.
-
-**Application Name:** Pi-Dash
-
-**Application Site:** https://github.com/surajverma/pi-dash
-
-**Registry:** https://github.com/surajverma/pi-dash/pkgs/container/pi-dash
-
-**Github:** https://github.com/surajverma/pi-dash
-
-## First installation
-Before first startup:
-
-1. create the appdata folder:
-
-```shell
-mkdir /mnt/user/appdata/pi-dash
-```
-
-2. grab the example configuration json:
-
-```shell
-curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config-example.json -o /mnt/user/appdata/pi-dash/config.json
-```
-
 3. adjust the config as needed
 
 **[`^back to top^`](#unraid-templates)**
@@ -159,10 +76,40 @@ PostgreSQL 18 is a powerful, open source object-relational database system with 
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Pi-Dash
+![Pi-Dash](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/pi-dash-128.png)
+
+Pi-Dash is a simple, lightweight dashboard for monitoring multiple Pi-hole instances. It provides a clean, at-a-glance, responsive view of your Pi-hole statistics.
+
+**Application Name:** Pi-Dash
+
+**Application Site:** https://github.com/surajverma/pi-dash
+
+**Registry:** https://github.com/surajverma/pi-dash/pkgs/container/pi-dash
+
+**Github:** https://github.com/surajverma/pi-dash
+
+## First installation 
+Before first startup:
+1. create the appdata folder: 
+```bash
+mkdir /mnt/user/appdata/pi-dash
+```
+2. grab the example configuration json: 
+```bash
+curl https://raw.githubusercontent.com/surajverma/pi-dash/refs/heads/main/config-example.json -o /mnt/user/appdata/pi-dash/config.json
+```
+3. adjust the config as needed
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+
 # Sure-Web
 ![Sure-Web](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/sure-web-128.png)
 
-Sure is a community-driven fork of the former Maybe Finance application, continuing its mission to help users manage personal finances by tracking expenses, budgeting, and supporting wealth management. Note: "Maybe" is a trademark of Maybe Finance, Inc..
+Sure is a community-driven fork of the former Maybe Finance application, continuing its mission to help users manage personal finances by tracking expenses, budgeting, and supporting wealth management.
+Note: "Maybe" is a trademark of Maybe Finance, Inc..
 
 This is the 1 of 2 containers required to run Sure finance; **please review the additional requirements.**
 
@@ -173,13 +120,12 @@ This is the 1 of 2 containers required to run Sure finance; **please review the 
 **Registry:** https://github.com/we-promise/sure/pkgs/container/sure
 
 **Github:** https://github.com/we-promise/sure
-
 ## Additional Requirements
-This is container 1 of 2 needed to run Sure finance, runs alongside **Sure-Worker**. Requires a **Postgres** database and **Redis**.
+This is container 1 of 2 needed to run Sure finance, runs alongside **Sure-Worker**.
+Requires a **Postgres** database and **Redis**.
 
 Check the Sure documentation for more information: https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md
-
-## First installation
+## First installation 
 To ensure correct user permissions for the app-storage folder, **run** `chown -R 1000:1000 /mnt/user/appdata/sure/app-storage` after the initial startup.
 
 **[`^back to top^`](#unraid-templates)**
@@ -188,9 +134,10 @@ To ensure correct user permissions for the app-storage folder, **run** `chown -R
 # Sure-Worker
 ![Sure-Worker](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/sure-worker-128.png)
 
-Sure is a community-driven fork of the former Maybe Finance application, continuing its mission to help users manage personal finances by tracking expenses, budgeting, and supporting wealth management. Note: "Maybe" is a trademark of Maybe Finance, Inc..
+Sure is a community-driven fork of the former Maybe Finance application, continuing its mission to help users manage personal finances by tracking expenses, budgeting, and supporting wealth management.
+Note: "Maybe" is a trademark of Maybe Finance, Inc..
 
-This is the 2 of 2 containers required to run Sure finance; **please review the additional requirements.**
+This is the 2 of 2 container required to run Sure finance; **please review the additional requirements.**
 
 **Application Name:** Sure-Worker
 
@@ -203,8 +150,10 @@ This is the 2 of 2 containers required to run Sure finance; **please review the 
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Twitch-Channel-Points-Miner-v2
 
+# Twitch-Channel-Points-Miner-v2
 Coming soon...
 
 **[`^back to top^`](#unraid-templates)**
+
+----
