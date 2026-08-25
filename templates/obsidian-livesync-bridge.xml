@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Obsidian Livesync Bridge</Name>
+  <Repository>harshl/obsidian-livesync-bridge:latest</Repository>
+  <Registry>https://hub.docker.com/r/harshl/obsidian-livesync-bridge</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/vrtmrz/livesync-bridge/issues</Support>
+  <ReadMe>https://github.com/vrtmrz/livesync-bridge/blob/main/README.md</ReadMe>
+  <Project>https://github.com/vrtmrz/livesync-bridge</Project>
+  <Overview>Obsidian Self-hosted LiveSync Bridge: replicates a local Obsidian vault folder bidirectionally with CouchDB (LiveSync protocol). Runs headless (Deno, no GUI) - perfect for bringing agent-written markdown files (e.g. Hermes daily notes) into the LiveSync loop.&#xD;
+&#xD;
+The vault folder is mounted to /app/vault (storage peer), CouchDB is configured as a couchdb peer. Config lives in /app/dat/config.json (see config.sample.json after first start).&#xD;
+&#xD;
+After first start: copy /mnt/user/appdata/livesync-bridge/config/config.sample.json to config.json, configure the peers, restart the container.</Overview>
+  <Category>Productivity:Tools:Utilities</Category>
+  <ExtraSearchTerms>obsidian livesync couchdb sync bridge</ExtraSearchTerms>
+  <WebUI/>
+  <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/livesync-bridge.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/main/images/livesync-bridge.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Path: Config" Target="/app/dat" Default="/mnt/user/appdata/livesync-bridge/config" Mode="rw" Description="Config directory (config.json + config.sample.json)" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Path: Data" Target="/app/data" Default="/mnt/user/appdata/livesync-bridge/data" Mode="rw" Description="Sync state (heartbeat etc.)" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Path: Obsidian Vault" Target="/app/vault" Default="/mnt/user/obsidian" Mode="rw" Description="The Obsidian vault folder (storage peer, baseDir ./vault/)" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Variable: LSB_FULL_SYNC" Target="LSB_FULL_SYNC" Default="false" Description="Set to true to force a full sync on next start (resets automatically)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Changes>### 2026.08.25
+- Initial Release</Changes>
+</Container>
