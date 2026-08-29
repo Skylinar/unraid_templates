@@ -2,6 +2,7 @@
 - [Apache-Tika-Server](#apache-tika-server)
 - [Home-Hub](#home-hub)
   * [First installation](#first-installation)
+- [Nginx-Proxy-Manager-MCP](#nginx-proxy-manager-mcp)
 - [Pi-Dash](#pi-dash)
   * [First installation](#first-installation)
 - [PostgreSQL18](#postgresql18)
@@ -56,6 +57,39 @@ mkdir /mnt/user/appdata/homehub
 curl https://raw.githubusercontent.com/surajverma/homehub/main/config-example.yml -o /mnt/user/appdata/homehub/config.yml
 ```
 3. adjust the config as needed
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Nginx-Proxy-Manager-MCP
+![Nginx-Proxy-Manager-MCP](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/npm-mcp-128.png)
+
+MCP server for Nginx Proxy Manager - manage your reverse proxy through AI assistants.
+
+This container exposes an MCP (Model Context Protocol) endpoint that AI assistants can use to manage your Nginx Proxy Manager instance: list proxy hosts, create/update/delete hosts, manage SSL certificates, check system health and more.
+
+It has no web interface - connect to it from an MCP client (e.g. Claude Desktop, Cursor, or any MCP-compatible agent) using the HTTP transport:
+
+```
+http://[IP]:[PORT:8000]/mcp
+```
+
+**Application Name:** Nginx-Proxy-Manager-MCP
+
+**Application Site:** https://github.com/b3nw/nginx-proxy-manager-mcp
+
+**Registry:** https://github.com/b3nw/nginx-proxy-manager-mcp/pkgs/container/nginx-proxy-manager-mcp
+
+**Github:** https://github.com/b3nw/nginx-proxy-manager-mcp
+
+## First installation
+Before first startup:
+1. Make sure you have Nginx Proxy Manager running and note its API URL (`http://[NPM-IP]:81/api`)
+2. Create an NPM user or use an existing admin account (email + password)
+3. Optional: enable the destructive tools (create/update/delete) by setting `NPM_MCP_ENABLE_DESTRUCTIVE_TOOLS=true`
+4. Optional: set `NPM_MCP_AUTH_TOKEN` to require a bearer token for MCP clients
+
+For log access (`get_proxy_host_logs` tool), mount your NPM data directory read-only and set `NPM_LOG_DIR` accordingly - see the project documentation for details.
 
 **[`^back to top^`](#unraid-templates)**
 
