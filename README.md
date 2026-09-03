@@ -71,7 +71,7 @@ This container exposes an MCP (Model Context Protocol) endpoint that AI assistan
 It has no web interface - connect to it from an MCP client (e.g. Claude Desktop, Cursor, or any MCP-compatible agent) using the HTTP transport:
 
 ```
-http://[IP]:[PORT:8000]/mcp
+http://YOUR-UNRAID-IP:8000/mcp
 ```
 
 **Application Name:** Nginx-Proxy-Manager-MCP
@@ -84,7 +84,7 @@ http://[IP]:[PORT:8000]/mcp
 
 ## First installation
 Before first startup:
-1. Make sure you have Nginx Proxy Manager running and note its API URL (`http://[NPM-IP]:81/api`)
+1. Make sure you have Nginx Proxy Manager running and note its API URL (`http://NPM-IP:81/api`)
 2. Create an NPM user or use an existing admin account (email + password)
 3. Optional: enable the destructive tools (create/update/delete) by setting `NPM_MCP_ENABLE_DESTRUCTIVE_TOOLS=true`
 4. Optional: secure the endpoint with a bearer token — generate one with `openssl rand -hex 32` and set it as `NPM_MCP_AUTH_TOKEN`
