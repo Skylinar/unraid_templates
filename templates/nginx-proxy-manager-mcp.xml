@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Nginx-Proxy-Manager-MCP</Name>
+  <Repository>ghcr.io/b3nw/nginx-proxy-manager-mcp:latest</Repository>
+  <Registry>https://github.com/b3nw/nginx-proxy-manager-mcp/pkgs/container/nginx-proxy-manager-mcp</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
+  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#nginx-proxy-manager-mcp</ReadMe>
+  <Project>https://github.com/b3nw/nginx-proxy-manager-mcp</Project>
+  <Overview>MCP server for Nginx Proxy Manager - manage your reverse proxy through AI assistants.&#xD;
+&#xD;
+This container exposes an MCP (Model Context Protocol) endpoint on port 8000 that AI assistants can use to manage your Nginx Proxy Manager instance: list proxy hosts, create/update/delete hosts, manage SSL certificates, check system health and more.&#xD;
+&#xD;
+It has no web interface - connect to it from an MCP client (e.g. Claude Desktop, Cursor, or any MCP-compatible agent) using the HTTP transport:&#xD;
+&#xD;
+http://YOUR-UNRAID-IP:8000/mcp&#xD;
+&#xD;
+Before Installing:&#xD;
+1. Make sure you have Nginx Proxy Manager running and note its API URL (http://NPM-IP:81/api)&#xD;
+2. Create an NPM user or use an existing admin account (email + password)&#xD;
+3. Optional: enable the destructive tools (create/update/delete) by setting NPM_MCP_ENABLE_DESTRUCTIVE_TOOLS=true&#xD;
+4. Optional: set NPM_MCP_AUTH_TOKEN to require a bearer token for MCP clients&#xD;
+&#xD;
+For log access (get_proxy_host_logs tool), mount your NPM data directory read-only and set NPM_LOG_DIR accordingly - see the project documentation for details.</Overview>
+  <Category>Productivity: Tools: Other:</Category>
+  <ExtraSearchTerms>mcp nginx proxy manager npm reverse-proxy ai assistant model-context-protocol</ExtraSearchTerms>
+  <WebUI/>
+  <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/nginx-proxy-manager-mcp.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/npm-mcp.png?raw=true</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1788022949</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="MCP Port" Target="8000" Default="8000" Mode="tcp" Description="MCP server port (HTTP transport). Connect MCP clients to http://YOUR-UNRAID-IP:8000/mcp" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="NPM API URL" Target="NPM_API_URL" Default="http://NPM-IP:81/api" Mode="" Description="Nginx Proxy Manager API endpoint, e.g. http://192.168.1.10:81/api" Type="Variable" Display="always" Required="true" Mask="false">http://NPM-IP:81/api</Config>
+  <Config Name="NPM Identity" Target="NPM_IDENTITY" Default="" Mode="" Description="NPM user email (e.g. admin@example.com)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="NPM Secret" Target="NPM_SECRET" Default="" Mode="" Description="NPM user password" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="Enable Destructive Tools" Target="NPM_MCP_ENABLE_DESTRUCTIVE_TOOLS" Default="false|true" Mode="" Description="Enable write/destructive tools (create, update, delete, enable, disable). Leave false for read-only access." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="MCP Auth Token" Target="NPM_MCP_AUTH_TOKEN" Default="" Mode="" Description="Optional: bearer token required for MCP HTTP clients. Generate one with: openssl rand -hex 32" Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="MCP Host" Target="NPM_MCP_HOST" Default="0.0.0.0" Mode="" Description="MCP server bind address" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0</Config>
+  <Config Name="MCP Transport" Target="NPM_MCP_TRANSPORT" Default="http|stdio" Mode="" Description="Transport mode: http (default, for remote agents) or stdio" Type="Variable" Display="advanced" Required="false" Mask="false">http</Config>
+  <Config Name="NPM Log Dir" Target="NPM_LOG_DIR" Default="" Mode="" Description="Optional: path to mounted NPM log directory (enables get_proxy_host_logs). Mount NPM's /data/logs read-only and point this at the mount path." Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="NPM Logs" Target="/data/npm-logs" Default="/mnt/user/appdata/npm-mcp/logs" Mode="ro" Description="Optional: mount NPM's log directory here (read-only) and set NPM Log Dir to /data/npm-logs" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/npm-mcp/logs</Config>
+  <Changes>### 2026.08.29
+- Initial Release
+  </Changes>
+  <TailscaleStateDir/>
+</Container>
