@@ -87,7 +87,7 @@ Before first startup:
 1. Make sure you have Nginx Proxy Manager running and note its API URL (`http://[NPM-IP]:81/api`)
 2. Create an NPM user or use an existing admin account (email + password)
 3. Optional: enable the destructive tools (create/update/delete) by setting `NPM_MCP_ENABLE_DESTRUCTIVE_TOOLS=true`
-4. Optional: set `NPM_MCP_AUTH_TOKEN` to require a bearer token for MCP clients
+4. Optional: secure the endpoint with a bearer token — generate one with `openssl rand -hex 32` and set it as `NPM_MCP_AUTH_TOKEN`
 
 For log access (`get_proxy_host_logs` tool), mount your NPM data directory read-only and set `NPM_LOG_DIR` accordingly - see the project documentation for details.
 
