@@ -16,10 +16,10 @@ This container exposes an MCP (Model Context Protocol) endpoint on port 8000 tha
 &#xD;
 It has no web interface - connect to it from an MCP client (e.g. Claude Desktop, Cursor, or any MCP-compatible agent) using the HTTP transport:&#xD;
 &#xD;
-http://[IP]:[PORT:8000]/mcp&#xD;
+http://YOUR-UNRAID-IP:8000/mcp&#xD;
 &#xD;
 Before Installing:&#xD;
-1. Make sure you have Nginx Proxy Manager running and note its API URL (http://[NPM-IP]:81/api)&#xD;
+1. Make sure you have Nginx Proxy Manager running and note its API URL (http://NPM-IP:81/api)&#xD;
 2. Create an NPM user or use an existing admin account (email + password)&#xD;
 3. Optional: enable the destructive tools (create/update/delete) by setting NPM_MCP_ENABLE_DESTRUCTIVE_TOOLS=true&#xD;
 4. Optional: set NPM_MCP_AUTH_TOKEN to require a bearer token for MCP clients&#xD;
@@ -37,8 +37,8 @@ For log access (get_proxy_host_logs tool), mount your NPM data directory read-on
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="MCP Port" Target="8000" Default="8000" Mode="tcp" Description="MCP server port (HTTP transport). Connect MCP clients to http://[IP]:[PORT:8000]/mcp" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
-  <Config Name="NPM API URL" Target="NPM_API_URL" Default="http://[NPM-IP]:81/api" Mode="" Description="Nginx Proxy Manager API endpoint, e.g. http://192.168.1.10:81/api" Type="Variable" Display="always" Required="true" Mask="false">http://[NPM-IP]:81/api</Config>
+  <Config Name="MCP Port" Target="8000" Default="8000" Mode="tcp" Description="MCP server port (HTTP transport). Connect MCP clients to http://YOUR-UNRAID-IP:8000/mcp" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="NPM API URL" Target="NPM_API_URL" Default="http://NPM-IP:81/api" Mode="" Description="Nginx Proxy Manager API endpoint, e.g. http://192.168.1.10:81/api" Type="Variable" Display="always" Required="true" Mask="false">http://NPM-IP:81/api</Config>
   <Config Name="NPM Identity" Target="NPM_IDENTITY" Default="" Mode="" Description="NPM user email (e.g. admin@example.com)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="NPM Secret" Target="NPM_SECRET" Default="" Mode="" Description="NPM user password" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="Enable Destructive Tools" Target="NPM_MCP_ENABLE_DESTRUCTIVE_TOOLS" Default="false|true" Mode="" Description="Enable write/destructive tools (create, update, delete, enable, disable). Leave false for read-only access." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
