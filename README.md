@@ -1,5 +1,6 @@
 # Unraid Templates
 - [Apache-Tika-Server](#apache-tika-server)
+- [Bgutil-Provider](#bgutil-provider)
 - [Home-Hub](#home-hub)
   * [First installation](#first-installation)
 - [Nginx-Proxy-Manager-MCP](#nginx-proxy-manager-mcp)
@@ -27,6 +28,29 @@ Apache Tika is a project of the Apache Software Foundation that detects and extr
 **Registry:** https://hub.docker.com/r/apache/tika
 
 **Github:** https://github.com/apache/tika
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Bgutil-Provider
+![Bgutil-Provider](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/bgutil-provider-128.png)
+
+BgUtils POT Provider is a proof-of-origin (POT) token provider HTTP server for yt-dlp. It generates tokens that help yt-dlp downloads from YouTube appear more legitimate, which may help avoid "Sign in to confirm you're not a bot" errors and HTTP 403 responses. Commonly used together with [Tube Archivist](https://github.com/tubearchivist/tubearchivist), which has a built-in integration.
+
+## Additional Requirements
+**Never expose this service to the internet.** The token server is unauthenticated by design — it must stay on the local network only. Do not publish the port beyond your LAN and do not create a reverse proxy entry for it.
+
+## First installation
+1. Set the "PO Token Provider URL" in your yt-dlp frontend to `http://YOUR-UNRAID-IP:4416` (in Tube Archivist: Settings → Application).
+2. Match versions: pin the container to the same version as the provider plugin that yt-dlp (or Tube Archivist) ships with. Tube Archivist currently pins plugin 1.3.2 — the template default follows that.
+
+**Application Name:** Bgutil-Provider
+
+**Application Site:** https://github.com/Brainicism/bgutil-ytdlp-pot-provider
+
+**Registry:** https://hub.docker.com/r/brainicism/bgutil-ytdlp-pot-provider
+
+**Github:** https://github.com/Brainicism/bgutil-ytdlp-pot-provider
 
 **[`^back to top^`](#unraid-templates)**
 
