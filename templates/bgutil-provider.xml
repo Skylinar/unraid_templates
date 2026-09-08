@@ -17,7 +17,7 @@ WARNING - NEVER EXPOSE THIS SERVICE TO THE INTERNET:&#xD;
 The token server is unauthenticated by design. It must never be published to the internet or exposed through a reverse proxy. Accessible tokens from untrusted clients could be misused, resources consumed and potentially remote code execution triggered. Keep it on the local network only and do not create a reverse proxy entry for it.&#xD;
 &#xD;
 Version matching: pin the container to the same version as the provider plugin that yt-dlp (or your app like Tube Archivist) ships with. Tube Archivist currently pins plugin 1.3.2, hence the default tag here is 1.3.2.</Overview>
-  <Category>Media: Other: Tools:</Category>
+  <Category>Productivity: Tools: Other:</Category>
   <ExtraSearchTerms>yt-dlp youtube po token pot botguard bgutil tubearchivist</ExtraSearchTerms>
   <WebUI/>
   <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/bgutil-provider.xml</TemplateURL>
