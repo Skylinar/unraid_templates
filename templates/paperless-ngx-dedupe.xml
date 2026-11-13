@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>paperless-ngx-dedupe</Name>
+  <Repository>ghcr.io/rknightion/paperless-ngx-dedupe:latest</Repository>
+  <Registry>https://github.com/rknightion/paperless-ngx-dedupe/pkgs/container/paperless-ngx-dedupe</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/193655-support-skylinars-repository/</Support>
+  <ReadMe>https://github.com/Skylinar/unraid_templates/blob/main/README.md#paperless-ngx-dedupe</ReadMe>
+  <Project>https://github.com/rknightion/paperless-ngx-dedupe</Project>
+  <Overview>Duplicate finder for Paperless-ngx. Syncs your documents via the Paperless API, finds exact and near-duplicates (MinHash/LSH with Jaccard + fuzzy scoring and a discriminative penalty against template look-alikes such as monthly invoices) and lets you review each group side by side before anything is removed. Deleted documents go to the Paperless trash.&#xD;
+&#xD;
+SECURITY: the app has NO built-in authentication. Anyone who can reach the port can review and delete documents with the permissions of the configured Paperless user. Do not expose it to the internet - put it behind a reverse proxy with access control or keep it LAN-only.&#xD;
+&#xD;
+Before Installing:&#xD;
+1. Create an API token in Paperless-ngx (user menu - My Profile - API Auth Token). The user needs delete permissions on the documents you want to clean up.&#xD;
+2. Set Paperless URL to the address the container can reach, e.g. http://192.168.1.10:8000 (no trailing path).&#xD;
+3. If you access the UI through a reverse proxy (HTTPS domain), set Origin to that exact URL (e.g. https://dedupe.example.com), otherwise saving and actions fail with a CSRF / cross-site POST error. Leave it empty for direct access via http://YOUR-UNRAID-IP:3000.&#xD;
+4. After the first start open the Web UI, run a sync and then the analysis. Thresholds can be tuned under Settings.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <ExtraSearchTerms>paperless paperless-ngx duplicate duplicates dedupe deduplication documents dms minhash</ExtraSearchTerms>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://github.com/Skylinar/unraid_templates/blob/main/templates/paperless-ngx-dedupe.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/paperless-ngx-dedupe.png?raw=true</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1794596449</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>A running Paperless-ngx instance and an API token (or username/password) of a Paperless user.</Requires>
+  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Web UI and API port" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="App Data" Target="/app/data" Default="/mnt/user/appdata/paperless-ngx-dedupe/data" Mode="rw" Description="SQLite database of the app (sync cache, duplicate groups, settings)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/paperless-ngx-dedupe/data</Config>
+  <Config Name="Paperless URL" Target="PAPERLESS_URL" Default="http://PAPERLESS-IP:8000" Mode="" Description="Base URL of your Paperless-ngx instance as seen from the container, e.g. http://192.168.1.10:8000" Type="Variable" Display="always" Required="true" Mask="false">http://PAPERLESS-IP:8000</Config>
+  <Config Name="Paperless API Token" Target="PAPERLESS_API_TOKEN" Default="" Mode="" Description="API token of a Paperless user (Paperless: My Profile - API Auth Token). Preferred over username/password. The user needs delete permissions on the documents you want to clean up." Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="Origin" Target="ORIGIN" Default="" Mode="" Description="Public URL when accessed through a reverse proxy, e.g. https://dedupe.example.com (SvelteKit CSRF check). Leave empty for direct access via IP:port." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Paperless Username" Target="PAPERLESS_USERNAME" Default="" Mode="" Description="Alternative to the API token: Paperless username (requires Paperless Password). Ignored when an API token is set." Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Paperless Password" Target="PAPERLESS_PASSWORD" Default="" Mode="" Description="Alternative to the API token: Paperless password (requires Paperless Username)." Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="Log Level" Target="LOG_LEVEL" Default="info|debug|warn|error" Mode="" Description="Log verbosity" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="AI Enabled" Target="AI_ENABLED" Default="false|true" Mode="" Description="Optional AI-based document classification / metadata extraction via OpenAI. Requires an OpenAI API key. Documents are sent to OpenAI when enabled." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="OpenAI API Key" Target="AI_OPENAI_API_KEY" Default="" Mode="" Description="Required only when AI Enabled is true." Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="CORS Allow Origin" Target="CORS_ALLOW_ORIGIN" Default="" Mode="" Description="Empty = same-origin only (recommended), * = all origins, or a specific origin URL" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Prometheus Metrics" Target="OTEL_PROMETHEUS_ENABLED" Default="false|true" Mode="" Description="Expose app metrics in Prometheus format at /api/v1/metrics" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID the app runs as (Unraid default: 99 = nobody)" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID the app runs as (Unraid default: 100 = users)" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Changes>### 2026.11.13
+- Initial Release
+  </Changes>
+  <TailscaleStateDir/>
+</Container>
