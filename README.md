@@ -4,6 +4,8 @@
 - [Home-Hub](#home-hub)
   * [First installation](#first-installation)
 - [Nginx-Proxy-Manager-MCP](#nginx-proxy-manager-mcp)
+- [paperless-ngx-dedupe](#paperless-ngx-dedupe)
+  * [First installation](#first-installation)
 - [Pi-Dash](#pi-dash)
   * [First installation](#first-installation)
 - [PostgreSQL18](#postgresql18)
@@ -130,6 +132,35 @@ PostgreSQL 18 is a powerful, open source object-relational database system with 
 **Registry:** https://registry.hub.docker.com/_/postgres/
 
 **Github:** https://github.com/docker-library/postgres
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# paperless-ngx-dedupe
+![paperless-ngx-dedupe](https://raw.githubusercontent.com/Skylinar/unraid_templates/refs/heads/main/images/readme/paperless-ngx-dedupe-128.png)
+
+Duplicate finder for Paperless-ngx. Syncs your documents via the Paperless API, finds exact and near-duplicates (MinHash/LSH with Jaccard + fuzzy scoring and a discriminative penalty against template look-alikes such as monthly invoices) and lets you review each group side by side before anything is removed. Deleted documents go to the Paperless trash.
+
+> **Security:** the app has **no built-in authentication**. Anyone who can reach the port can review and delete documents with the permissions of the configured Paperless user. Keep it LAN-only or put it behind a reverse proxy with access control.
+
+**Application Name:** paperless-ngx-dedupe
+
+**Application Site:** https://github.com/rknightion/paperless-ngx-dedupe
+
+**Registry:** https://github.com/rknightion/paperless-ngx-dedupe/pkgs/container/paperless-ngx-dedupe
+
+**Github:** https://github.com/rknightion/paperless-ngx-dedupe
+
+## First installation
+Before first startup:
+1. Create an API token in Paperless-ngx (*My Profile → API Auth Token*). The user needs delete permissions on the documents you want to clean up.
+2. Set **Paperless URL** to the address the container can reach, e.g. `http://192.168.1.10:8000`.
+3. Using a reverse proxy (HTTPS domain)? Set **Origin** to that exact URL, e.g. `https://dedupe.example.com` - otherwise actions fail with a CSRF / cross-site POST error. Leave it empty for direct access via `http://YOUR-UNRAID-IP:3000`.
+4. Start the container, open the Web UI, run a sync and then the analysis. Similarity thresholds can be tuned under *Settings*.
+
+Optional (advanced view): username/password instead of a token, OpenAI-based AI processing (`AI_ENABLED` + `AI_OPENAI_API_KEY`), Prometheus metrics at `/api/v1/metrics`.
+
+Icon: project favicon from the upstream repository (GPL-3.0).
 
 **[`^back to top^`](#unraid-templates)**
 
